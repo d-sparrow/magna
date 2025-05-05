@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор коммерческих предложений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Генератор коммерческих предложений</h1>
+    <form id="offerForm">
+        <label for="offerNumber">Номер предложения</label>
+        <input type="text" id="offerNumber" name="offerNumber" required>
+
+        <label for="date">Дата</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="designer">Дизайнер</label>
+        <input type="text" id="designer" name="designer" required>
+
+        <label for="customer">Имя заказчика</label>
+        <input type="text" id="customer" name="customer">
+
+        <label for="objectLocation">Местоположение объекта</label>
+        <input type="text" id="objectLocation" name="objectLocation">
+
+        <label for="stoneType">Тип камня</label>
+        <select id="stoneType" name="stoneType" required>
+            <option value="marble">Мрамор</option>
+            <option value="granite">Гранит</option>
+        </select>
+
+        <label for="stoneName">Название камня</label>
+        <input type="text" id="stoneName" name="stoneName" required>
+
+        <label for="priceBreakdown">Разбивка цен (в формате JSON)</label>
+        <textarea id="priceBreakdown" name="priceBreakdown" placeholder='например, [{"item":"Камень", "price":401238}, {"item":"Изготовление", "price":190158}]' required></textarea>
+
+        <button type="submit">Создать предложение</button>
+    </form>
+
+    <script src="generator.js"></script>
+</body>
+</html>
