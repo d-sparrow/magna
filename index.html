@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Countertop Estimator Admin Panel</h1>
+  </header>
+  <main>
+    <section id="loginForm">
+      <h2>Login</h2>
+      <form id="login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="adminPanel" style="display: none;">
+      <h2>Admin Panel</h2>
+      <button id="loadUsers">Load Users</button>
+      <ul id="userList"></ul>
+
+      <h3>Add New User</h3>
+      <form id="addUser">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" required>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" required>
+        <label for="newRole">Role:</label>
+        <select id="newRole">
+          <option value="manager">Manager</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit">Add User</button>
+      </form>
+    </section>
+  </main>
+  <script src="../src/js/admin.js"></script>
+</body>
+</html>

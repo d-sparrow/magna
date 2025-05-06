@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Granite",
+    "pricePerSquareFoot": 50,
+    "description": "Durable and heat-resistant natural stone."
+  },
+  {
+    "name": "Marble",
+    "pricePerSquareFoot": 70,
+    "description": "Elegant natural stone with unique veining."
+  },
+  {
+    "name": "Quartz",
+    "pricePerSquareFoot": 90,
+    "description": "Engineered stone with low maintenance."
+  }
+]
